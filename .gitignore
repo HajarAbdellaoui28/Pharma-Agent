@@ -1,0 +1,17 @@
+.env
+.env.*
+!.env.example
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.cache/
+.docker-local/
+tmp/
+*.egg-info/
+build/
+dist/
+assignment-pharma.pdf
+docs/assignment-extracted.txt
+*.log

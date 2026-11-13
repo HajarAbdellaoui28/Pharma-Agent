@@ -1,0 +1,71 @@
+[
+  {
+    "id": "public-1", "public": true,
+    "question": "What are the main contraindications for warfarin?",
+    "sources": ["dailymed-warfarin.md"],
+    "facets": [{"source": "dailymed-warfarin.md", "sections": ["4 CONTRAINDICATIONS"]}],
+    "rubric": "Main labeled contraindications; pregnancy exception for high-risk mechanical heart valves; bleeding disorders, surgery/procedures, hypersensitivity and malignant hypertension. Do not conflate all warnings with formal contraindications."
+  },
+  {
+    "id": "public-2", "public": true,
+    "question": "Compare the contraindications of warfarin and apixaban. What conditions are shared and which are unique to each drug?",
+    "sources": ["dailymed-warfarin.md", "dailymed-apixaban.md"],
+    "facets": [{"source": "dailymed-warfarin.md", "sections": ["4 CONTRAINDICATIONS"]}, {"source": "dailymed-apixaban.md", "sections": ["4 CONTRAINDICATIONS"]}],
+    "rubric": "Compare both formal lists. Shared bleeding-related contraindications and drug-specific hypersensitivity (apixaban severe hypersensitivity). Warfarin has additional listed conditions and pregnancy exception. Apixaban's active pathological bleeding phrasing is distinct. Unique means only in supplied formal lists, not proof of safety or no warnings."
+  },
+  {
+    "id": "public-3", "public": true,
+    "question": "A patient currently on warfarin is prescribed sertraline. What is the risk of bleeding and what monitoring is recommended?",
+    "sources": ["dailymed-warfarin.md", "dailymed-sertraline.md"],
+    "facets": [{"source": "dailymed-warfarin.md", "sections": ["7.3 Drugs that Increase Bleeding Risk", "7.1 General Information"]}, {"source": "dailymed-sertraline.md", "sections": ["5.3 Increased Risk of Bleeding", "7.1 Clinically Significant Drug Interactions"]}],
+    "rubric": "Increased bleeding risk with SSRI/sertraline and warfarin. Close monitoring of INR/coagulation indices when starting/stopping sertraline, and signs/symptoms of bleeding. Do not invent absolute risk, dosing changes, or unsupported fixed monitoring interval."
+  },
+  {
+    "id": "public-4", "public": true,
+    "question": "A patient with an eGFR of 25 mL/min is being considered for metformin. Is metformin contraindicated at this level of renal function, and what is the threshold?",
+    "sources": ["dailymed-metformin.md"],
+    "facets": [{"source": "dailymed-metformin.md", "sections": ["4 CONTRAINDICATIONS", "2.3 Recommendations for Use in Renal Impairment", "8.6 Renal Impairment"]}],
+    "rubric": "Yes if the scenario means indexed eGFR, below 30 mL/min/1.73 m2 is contraindicated. Preserve label units and clarify question omitted indexing. Initiation between 30 and 45 not recommended is distinct from contraindication below 30. Avoid patient-specific prescribing."
+  },
+  {
+    "id": "extra-1", "public": false,
+    "question": "What does the supplied acetaminophen label say about liver risk and maximum tablets in 24 hours for adults?",
+    "sources": ["dailymed-acetaminophen.md"],
+    "facets": [{"source": "dailymed-acetaminophen.md", "sections": ["Directions"]}, {"source": "dailymed-acetaminophen.md", "sections": ["Warnings"]}],
+    "rubric": "Use product-specific supplied label directions and liver warning, preserve tablet strength/population; do not substitute a general 4g maximum for this product's directions."
+  },
+  {
+    "id": "extra-2", "public": false,
+    "question": "What bleeding concerns arise when ibuprofen is combined with warfarin, according to both labels?",
+    "sources": ["dailymed-ibuprofen.md", "dailymed-warfarin.md"],
+    "facets": [{"source": "dailymed-ibuprofen.md", "sections": ["Drug Interactions"]}, {"source": "dailymed-warfarin.md", "sections": ["7.3 Drugs that Increase Bleeding Risk"]}],
+    "rubric": "Increased bleeding/GI bleeding risk with NSAIDs and warfarin; cite both labels, no invented percentage or assertion that a normal INR excludes all bleeding risk."
+  },
+  {
+    "id": "extra-3", "public": false,
+    "question": "What does the apixaban label recommend for nonvalvular atrial fibrillation dosing, and what age, weight, and serum creatinine criteria change the dose?",
+    "sources": ["dailymed-apixaban.md"],
+    "facets": [{"source": "dailymed-apixaban.md", "sections": ["2.1 Recommended Dose"]}],
+    "rubric": "Preserve indication and dose criteria: 5 mg twice daily for most; 2.5 mg twice daily with at least two of age >=80, body weight <=60kg, serum creatinine >=1.5mg/dL. Do not confuse any one criterion with at least two."
+  },
+  {
+    "id": "extra-4", "public": false,
+    "question": "What is the recommended adult dosing for a medicine called zorbimycin?",
+    "sources": [], "facets": [],
+    "rubric": "Zorbimycin is outside supplied corpus. Abstain with clear missing-evidence limitation; no invented dosing or citations."
+  },
+  {
+    "id": "extra-5", "public": false,
+    "question": "Does the supplied corpus establish that sertraline plus warfarin increases major bleeding risk by exactly 37 percent?",
+    "sources": ["dailymed-sertraline.md", "dailymed-warfarin.md"],
+    "facets": [{"source": "dailymed-sertraline.md", "sections": ["5.3 Increased Risk of Bleeding", "7.1 Clinically Significant Drug Interactions"]}, {"source": "dailymed-warfarin.md", "sections": ["7.3 Drugs that Increase Bleeding Risk"]}],
+    "rubric": "Do not endorse the unsupported 37 percent figure. May describe increased bleeding risk grounded in labels, while stating supplied evidence does not establish exact percentage."
+  },
+  {
+    "id": "extra-6", "public": false,
+    "question": "What do the metformin label and glossary say about lactic acidosis and renal impairment?",
+    "sources": ["dailymed-metformin.md", "GLOSSARY.md"],
+    "facets": [{"source": "dailymed-metformin.md", "sections": ["5.1 Lactic Acidosis", "WARNING: LACTIC ACIDOSIS"]}, {"source": "GLOSSARY.md", "sections": ["Safety and monitoring"]}],
+    "rubric": "Metformin label describes lactic acidosis and renal impairment risk. Glossary does not define lactic acidosis or give metformin thresholds; acknowledge glossary limitation rather than attribute nonexistent content."
+  }
+]

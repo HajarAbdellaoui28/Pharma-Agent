@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools==80.3.1"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pharma-agent"
+version = "1.0.0"
+description = "Evidence-grounded pharmacology research with LangGraph and hybrid retrieval"
+requires-python = ">=3.11"
+dynamic = ["dependencies"]
+
+[tool.setuptools.dynamic]
+dependencies = {file = ["requirements.txt"]}
+
+[tool.setuptools.packages.find]
+include = ["pharma_agent*"]
+
+[tool.setuptools.package-data]
+pharma_agent = ["static/*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+asyncio_mode = "auto"
+asyncio_default_fixture_loop_scope = "function"
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP"]
+ignore = ["E501"] # Formatter handles code; prompts and source fixtures preserve readable prose.
